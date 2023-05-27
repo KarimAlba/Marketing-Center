@@ -1,0 +1,148 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+main{    
+    margin: 50px 20%;
+    height: auto;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+img{
+    width: 30%;
+}
+
+.container{
+    display: flex;
+    flex-flow: column;
+}
+
+h1{
+    margin: 0;
+    padding: 7px;
+    font-size: 20px;
+    line-height: 22px;
+    color: #ffff;
+    background-color: #23ab93;
+    animation: 4s infinite alternate blinking;
+}
+
+h4{
+    margin: 10px 0;
+    padding: 7px;
+    line-height: 20px; 
+    color: #ffff;
+    background-color: #ff5967;
+}
+
+.telegram-container{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    background-color: #363e8f;
+    cursor: pointer;
+}
+
+.telegram-title{
+    width: 70%;
+    background-color: #363e8f;
+}
+
+.telegram-img{
+    margin: auto;
+    width: 25px;
+    height: 25px;
+}
+
+.telegram-visiting{
+    display: none;
+    background-color: #363e8f;
+}
+
+.telegram-link{
+    color: #fff;
+    width: 70%;
+}
+
+.qr-code,
+.data-base_qr{
+    width: 10%;
+    margin: auto;
+}
+
+.data-base{
+    margin: 10px 0;
+    border-top:2px  solid #ff5967;
+    height: 60px;
+    display: flex;
+}
+
+.in-base{
+    width: 32%;
+    margin: -10px auto auto 0;
+}
+
+.data-base_link{
+    margin: auto 0;
+    width: 30%;
+    line-height: 27px;
+    color: #094fd1;
+    border: 3px solid #23ab93;
+    border-radius: 7px;
+    text-align: center;
+}
+
+h5{
+    margin: 20px 0 0 10px;
+}
+
+a{
+    margin: 10px 0 0 10px;
+    color: #000;
+    text-decoration: none;
+}
+
+.call-link{
+    animation: 3s infinite alternate slidein;
+}
+
+a:hover,
+a:active{
+    animation: 1s infinite alternate slidein;
+}
+
+  
+@keyframes slidein {
+    from {
+        color: #094fd1;
+    }
+
+    50% {
+        color: #23ab93;
+    }
+
+    to {
+        color: #ff5967;
+    }
+}
+
+@keyframes blinking {
+    from {
+        color: #ffff;
+    }
+
+    50%{
+        color: #f7efc6;
+    }
+
+    to {
+        color: #ffff;
+    }
+}
